@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\CalculoDeIMC;
 
-class IMCController extends Controller
+class ImcController extends Controller
 {
     
     public function index() {
@@ -17,6 +17,6 @@ class IMCController extends Controller
 
         $valor = $calculoDeIMC->calcular();
 
-        return view('imc', ['valor'=>$valor]);
+        return view('resultado', ['valor'=>$valor]);
     }
 }

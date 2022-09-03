@@ -12,11 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'App\Http\Controllers\ImcController@index');
 
-Route::get('/info', 'App\Http\Controllers\IMCController@info');
-
-Route::get('/imc', 'App\Http\Controllers\IMCController@imc');
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/gasto', 'App\Http\Controllers\ImcController@indice');
+/*
+Route::get('/', function () {
+    return view('welcome');
+});
+*/
