@@ -11,7 +11,7 @@ class CalculoDeIMC extends Model
         $altura = $_GET['altura'];
         $peso = $_GET['peso'];
         
-        $calculoIMC = $peso / ($altura * $altura);
+        $calculoIMC = ($peso / ($altura * $altura)) * 10000;
 
         return $calculoIMC;
 
