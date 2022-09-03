@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class CalculoDeIMC extends Model
 {
     public function calcular() {
-        $peso = $_GET['peso'];
         $altura = $_GET['altura'];
-
+        $peso = $_GET['peso'];
+        
         $calculoIMC = $peso / ($altura * $altura);
 
         return $calculoIMC;

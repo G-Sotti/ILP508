@@ -15,12 +15,6 @@
                 <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
                 <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
                 
-                <label for="altura">Altura em cm (ex.: 170)</label>
-                <input type="int" class="campoTexto"  name="altura" required/>
-
-                <label for="peso">Peso em kg (ex.: 69,2)</label>
-                <input type="float" class="campoTexto" name="peso" required/>
-
             </div>
         </div>
 
@@ -28,6 +22,12 @@
             <h2>Veja a interpretação do IMC</h2>
             <div class="conteudo-painel">
                 <form action="{{url('/indice')}}" method="get">
+                <label for="altura">Altura em cm (ex.: 170)</label>
+                <input type="int" class="campoTexto"  name="altura" required/>
+
+                <label for="peso">Peso em kg (ex.: 69,2)</label>
+                <input type="float" class="campoTexto" name="peso" required/>
+
                 <table class="table table-borderless">
                     <thead>
                     <tr>
