@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', 'App\Http\Controllers\ImcController@index');
 
-Route::get('/info', 'App\Http\Controllers\ImcController@info');
+Route::get('/indice', 'App\Http\Controllers\ImcController@indice');
 /*
 Route::get('/', function () {
     return view('welcome');

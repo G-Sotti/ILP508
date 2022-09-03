@@ -13,7 +13,7 @@
             <div class='sucesso'>
                 <h3>SEU IMC: </h3>
                 <ul>
-                    <li><b>Gasolina:</b> R$ {{$valor}}</li>
+                    <li><b>IMC:</b> {{$valor}}</li>
                 </ul>
             </div>
             <a class="botao" href="{{URL('/')}}" title="voltar">Voltar</a>
